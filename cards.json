@@ -1,0 +1,22 @@
+[
+    {
+        "fotoperfil": "/public/sniff.jpg",
+        "nombre": "PIZZATIME!!!",
+        "foto": "/public/fotopubli1.jpg",
+        "descripcion": "¿Qué ta' chendo?, Yo con mi pizza :p",
+        "iconos2": "icono2",
+        "iconos1":"icono1",
+        "megusta": "5,767,258 Me gusta",
+        "comentarios":"Ver los 1,013 comentarios"
+    },
+    {
+        "fotoperfil": "/public/lobo.jpg",
+        "nombre": "tIgreHeRmozo27",
+        "foto": "/public/panda.jpg",
+        "descripcion": "VuzCo Diztinguida daMa Zoi Ezte Info aL pRibad0",
+        "iconos1": "icono1",
+        "iconos2": "icono2",
+        "megusta": "126,001 Me gusta",
+        "comentarios":"Ver los 5 comentarios"
+    }
+]

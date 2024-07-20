@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.Logo {
+    width: 150px;
+    height: 50px;
+    margin-top: 5px;
+}
+
+.apartado-arriba {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #f4f4f4;
+}
+
+.icons {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #f4f4f4;
+    transition: filter 0.3s;
+
+}
+
+.icons:hover {
+    color:red;
+    filter: invert(61%) sepia(95%) saturate(6760%) hue-rotate(0deg) brightness(97%) contrast(104%);
+}
+
+/* Contenedor para las historias */
+#historias-container {
+    display: flex;
+    padding: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 25px;
+    margin-left: 25px;
+    overflow-x: scroll; /* Permite el desplazamiento horizontal dentro del contenedor */
+    overflow-y: hidden; /* Oculta la barra de desplazamiento vertical si no la necesitas */
+}
+
+/* Estilo para cada historia */
+.historia {
+    display: inline-block;
+    background-color: transparent;
+    text-align: center;
+}
+
+.historia img {
+    width: 70px;
+    height: 70px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 2px  solid transparent; /* Se usa un borde sólido transparente */
+    background: linear-gradient(
+        45deg,
+        hsl(55deg 100% 50%) 0%,
+        hsl(44deg 100% 50%) 17%,
+        hsl(26deg 100% 59%) 33%,
+        hsl(1deg 100% 65%) 50%,
+        hsl(336deg 100% 52%) 67%,
+        hsl(322deg 100% 42%) 83%,
+        hsl(299deg 100% 31%) 100%
+    );
+    background-clip: border-box;
+     /* Asegura que el fondo del gradiente se dibuje en el borde */
+    border-image: linear-gradient(
+        45deg,
+        hsl(55deg 100% 50%) 0%,
+        hsl(44deg 100% 50%) 17%,
+        hsl(26deg 100% 59%) 33%,
+        hsl(1deg 100% 65%) 50%,
+        hsl(336deg 100% 52%) 67%,
+        hsl(322deg 100% 42%) 83%,
+        hsl(299deg 100% 31%) 100%
+    ) 1; /* La última propiedad define el ancho del borde de la imagen */
+}
+
+.historia p {
+    margin-top: 2px;
+    font-size: 13px;
+    color: #fff;
+}
+
+/*cards*/
+.primerbloque{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    margin-top: 25px;
+}
+.fotoperfil{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.nombreperfil{
+    font-size: 16px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.segundobloque{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+.fotopubli{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 15px;
+}
+.megusta{
+    color: white;
+    margin-left: 15px;
+}
+
+.descripcion{
+    color: white;
+    margin-left: 15px;
+    margin-top: 5px;
+
+}
+.nombre2{
+    color: white;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.comentarios{
+    color: white;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.card{
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.icons.liked {
+    filter: invert(21%) sepia(95%) saturate(6760%) hue-rotate(0deg) brightness(97%) contrast(104%);
+    /* Color rojo para el ícono de corazón */
+}
+
+/* Filtro de color para el ícono de comentarios cuando se hace clic */
+.icons.commented {
+    filter: invert(37%) sepia(69%) saturate(743%) hue-rotate(195deg) brightness(94%) contrast(92%);
+    /* Color azul para el ícono de comentarios */
+}
+
+/* Ocultar el contenido principal en pantallas grandes */
+@media screen and (min-width: 1024px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .apartado-arriba, .historias, .cards {
+        display: none;
+    }
+
+    .mensaje {
+        display: block;
+    }
+}
+
+/* Mostrar el contenido principal en pantallas pequeñas */
+@media screen and (max-width: 1023px) {
+    .mensaje {
+        display: none;
+    }
+}
+
+
